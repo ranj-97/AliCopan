@@ -1,0 +1,29 @@
+Client ID: 1
+Client secret: 4VksfVzaoxjMcByEp0ILXX6N6z2FgX5tnrQ2ExnH
+Password grant client created successfully.
+Client ID: 2
+Client secret: BsG93wzpKzFoS5F7vKF0lUm7dTWy4NKcyPwa8CF5
+
+
+//////////////////////////
+Client ID: 1
+Client secret: ZwA84C4yZNdombmMnNSUAZPFjVQWUqc3a8lH6Wbf
+Password grant client created successfully.
+Client ID: 2
+Client secret: KzKowrvrUmyth7SR5M6hMj3ivIyHcFfMMWSiHB98
+///////////////////////
+
+"-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvDRmyBzSlYz83yfeSqfN
+Kwx99Jyv9/AdPeXdg5nTTfLt14DigqsDKrAeIooPyPnxRTVtBWflentS4QhSJSzm
+XIDT4LP7fBWXN0QagYBk2AeCIRaO3JbtZpc93L5JqccixCzqUkh5xkHaRXo38qMd
+Z7/KF00XWM5cTiyHKRWhUcfSQdQ31m8Q6SXsqIM+BYEHEb260DivwylGr6qGrog3
+FPv00UdIHOaTDdM8y2g9T6UEf17sqKG6LcxtOT/3vIzvCHctptZdPb3WRqcOLVS2
+nVVV9rJbPys6se8iLCn7MLwF4mPSHyocapLHj7orpIpT8/efdNOXUps0RwRiNKtL
+cygJNVbdkXCO0mJdkk67tASWeUi/GmliEvPPT/uMOjkoQruaru8YY23vIKOFaz3k
+Jz9d8mn5zTOUGYaE/ZCMxvwj9vNX/gBnPNEh+iihkrv7qMPLBFbtAs60Ctes82NR
+NrEsBWbhk/TL8FUZkMTSJT/eO3yYjQ6R8A03WDzWiEVxg0Y8vEYK13RMhQtKfO3g
+ewSxw+KvSjcbiISvO76O5UDTTQ0BxCLliAw3CuLSYPnOiZ48D/SiLgzOrO0tYaV9
+ebVBdE1Fs8JkjcIJxM9h9WTGDIBcwfz0WmdQxpXQEiai+yZJ9Mt8nuYv0KXeBiv2
+oM+C76OzGVATheR4POY85u0CAwEAAQ==
+-----END PUBLIC KEY-----"
