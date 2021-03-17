@@ -21,7 +21,7 @@ class Employees extends Migration
             $table->double('salary');
             $table->timestamp('start_date')->nullable();
             $table->timestamp('end_date')->nullable(); 
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamp('last_login')->nullable();
             $table->boolean('active')->default(1);
             $table->timestamps();

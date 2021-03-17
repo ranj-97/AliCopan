@@ -34,7 +34,7 @@ class CompaniesController extends Controller
         return Company::create([
                 'name'=>$request['name'],
                 
-        ]);
+        ])->with(["message"=>".براندەکەت بە سەرکەوتوی زیادکرا"]);
         }
         else {
             abort(403, 'Unauthorized Action.');
@@ -53,7 +53,7 @@ class CompaniesController extends Controller
             'name' => 'required|string|max:191',
         ]);
         $user->update($request->all());
-        return ["message"=>"Updated Color Name"];
+        return ["message"=>".براندەکەت بە سەرکەوتوی نوێ کرایەوە"];
         }
         else {
             abort(403, 'Unauthorized Action.');
@@ -65,17 +65,17 @@ class CompaniesController extends Controller
     //////////////////////////
 
     public function delete(Request $request){
-        if (Gate::allows('isSuperAdmin') || Gate::allows('isAdmin') ) {
-            $user=Company::findorFail($request->id);
+        // if (Gate::allows('isSuperAdmin') || Gate::allows('isAdmin') ) {
+        //     $user=Company::findorFail($request->id);
 
-            $user->update($request->all());
-            return ["message"=>"Company Deleted"];
+        //     $user->update($request->all());
+        //     return ["message"=>"براندەکەت بە سەرکەوتووی سڕدرایەوە"];
 
-        }
-        else {
-            abort(403, 'Unauthorized Action.');
+        // }
+        // else {
+        //     abort(403, 'Unauthorized Action.');
            
-        }
+        // }
         
     }
 }

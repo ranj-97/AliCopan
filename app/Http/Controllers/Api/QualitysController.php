@@ -54,7 +54,7 @@ class QualitysController extends Controller
             'type' => 'required|string',
         ]);
         $user->update($request->all());
-        return ["message"=>"Updated Quality Type"];
+        return ["message"=>".براندەلەت بە سەرکەوتوی نوێ کرایەوە"];
         }
         else {
             abort(403, 'Unauthorized Action.');
@@ -66,16 +66,16 @@ class QualitysController extends Controller
     //////////////////////////
 
     public function delete(Request $request){
-        if (Gate::allows('isSuperAdmin') || Gate::allows('isAdmin') ) {
-            $user=Quality::findorFail($request->id);
+        // if (Gate::allows('isSuperAdmin') || Gate::allows('isAdmin') ) {
+        //     $user=Quality::findorFail($request->id);
 
-            $user->update($request->all());
-            return ["message"=>"Quality Deleted"];
-        }
-        else {
-            abort(403, 'Unauthorized Action.');
+        //     $user->update($request->all());
+        //     return ["message"=>"براندەکەت بە سەرکەوتووی سڕدرایەوە"];
+        // }
+        // else {
+        //     abort(403, 'Unauthorized Action.');
            
-        }
+        // }
         
     }
 }

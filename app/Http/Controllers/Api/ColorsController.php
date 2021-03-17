@@ -35,7 +35,7 @@ class ColorsController extends Controller
         return Color::create([
                 'name'=>$request['name'],
                 
-        ]);
+        ])->with(["message"=>".ڕەنگەکەت بە سەرکەوتوی زیادکرا"]);
         }
         else {
             abort(403, 'Unauthorized Action.');
@@ -54,7 +54,7 @@ class ColorsController extends Controller
             'name' => 'required|string|max:191',
         ]);
         $user->update($request->all());
-        return ["message"=>"Updated Color Name"];
+        return ["message"=>".ڕەنگەکەت بە سەرکەوتوی نوێ کرایەوە"];
         }
         else {
             abort(403, 'Unauthorized Action.');
@@ -66,16 +66,16 @@ class ColorsController extends Controller
     //////////////////////////
 
     public function delete(Request $request){
-        if (Gate::allows('isSuperAdmin') || Gate::allows('isAdmin') ) {
-        $data=Color::findorFail($request->id);
-        $data->delete();
+        // if (Gate::allows('isSuperAdmin') || Gate::allows('isAdmin') ) {
+        // $data=Color::findorFail($request->id);
+        // $data->delete();
 
-        return response()->json('Color Deleted');
-        }
-        else {
-            abort(403, 'Unauthorized Action.');
+        // return response()->json('ڕەنگەکەت بە سەرکەوتووی سڕدرایەوە ');
+        // }
+        // else {
+        //     abort(403, 'Unauthorized Action.');
            
-        }
+        // }
         
     }
 }
